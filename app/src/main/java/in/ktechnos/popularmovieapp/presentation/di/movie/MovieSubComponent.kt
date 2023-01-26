@@ -1,6 +1,6 @@
 package `in`.ktechnos.popularmovieapp.presentation.di.movie
 
-import `in`.ktechnos.popularmovieapp.presentation.MovieActivity
+import `in`.ktechnos.popularmovieapp.presentation.movie.MovieActivity
 import dagger.Subcomponent
 
 @MovieScope

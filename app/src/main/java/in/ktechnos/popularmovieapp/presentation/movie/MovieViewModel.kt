@@ -1,4 +1,4 @@
-package `in`.ktechnos.popularmovieapp.presentation
+package `in`.ktechnos.popularmovieapp.presentation.movie
 
 import `in`.ktechnos.popularmovieapp.domain.usecase.GetMoviesUseCase
 import androidx.lifecycle.ViewModel

@@ -1,8 +1,11 @@
-package `in`.ktechnos.popularmovieapp.presentation
+package `in`.ktechnos.popularmovieapp.presentation.movie
 
 import `in`.ktechnos.popularmovieapp.R
+import `in`.ktechnos.popularmovieapp.data.model.Movie
 import `in`.ktechnos.popularmovieapp.databinding.ActivityMovieBinding
+import `in`.ktechnos.popularmovieapp.presentation.MovieDetails
 import `in`.ktechnos.popularmovieapp.presentation.di.Injector
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +19,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import javax.inject.Inject
+
+
 
 class MovieActivity : AppCompatActivity() {
 
@@ -42,7 +47,9 @@ class MovieActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         binding.movieRecyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = MovieAdapter()
+        adapter = MovieAdapter(MovieAdapter.OnClickListener{
+            movie ->
+        })
         binding.movieRecyclerView.adapter = adapter
         displayPopularMovies()
     }
@@ -93,4 +100,6 @@ class MovieActivity : AppCompatActivity() {
             }
         })
     }
+
+
 }

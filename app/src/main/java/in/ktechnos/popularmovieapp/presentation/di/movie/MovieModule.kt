@@ -2,8 +2,7 @@ package `in`.ktechnos.popularmovieapp.presentation.di.movie
 
 import `in`.ktechnos.popularmovieapp.domain.usecase.GetMoviesUseCase
 import `in`.ktechnos.popularmovieapp.domain.usecase.UpdateMoviesUsecase
-import `in`.ktechnos.popularmovieapp.presentation.MovieViewModelFactory
-import `in`.ktechnos.popularmovieapp.presentation.di.movie.MovieScope
+import `in`.ktechnos.popularmovieapp.presentation.movie.MovieViewModelFactory
 
 import dagger.Module
 import dagger.Provides
