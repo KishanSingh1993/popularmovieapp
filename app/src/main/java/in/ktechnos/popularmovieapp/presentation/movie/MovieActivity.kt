@@ -5,6 +5,7 @@ import `in`.ktechnos.popularmovieapp.data.model.Movie
 import `in`.ktechnos.popularmovieapp.databinding.ActivityMovieBinding
 import `in`.ktechnos.popularmovieapp.presentation.MovieDetails
 import `in`.ktechnos.popularmovieapp.presentation.di.Injector
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -87,6 +88,7 @@ class MovieActivity : AppCompatActivity() {
 
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     private fun updateMovies(){
         binding.movieProgressBar.visibility = View.VISIBLE
         val response = movieViewModel.updateMovies()
@@ -100,6 +102,5 @@ class MovieActivity : AppCompatActivity() {
             }
         })
     }
-
 
 }
