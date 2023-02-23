@@ -6,3 +6,8 @@ Popular Movie App demonstrates modern Android development with Hilt, Coroutines,
 # Screenshots:
 <img src="/ss/ss1.png" height="400px"/> <img src="/ss/ss2.png" height="400px"/>
 <img src="/ss/ss1.png" height="400px"/> <img src="/ss/ss3.png" height="400px"/>
+
+
+#Video
+
+<img src="/video/app_video.mp4" height="400px"/>
